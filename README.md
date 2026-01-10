@@ -38,7 +38,7 @@ pip install pandas openpyxl
 ## 📁 Estructura esperada
 
 ```
-python/
+x/
 ├── listas/              # Aquí van los excels de Google Ads
 ├── bd.xlsx              # Tu base de datos maestra
 ├── extracto_listas.py
