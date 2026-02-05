@@ -38,19 +38,15 @@ def generar_script_carga():
             os.remove(ARCHIVO_EXTRACCION)
             return
 
-        # Configuración de salida
-        fecha_hoy = datetime.now().strftime("%d%m%y")
-        etiqueta = f"ADS, CargaGoogle{fecha_hoy}"
-
         # Construcción del DataFrame final
         df_final = pd.DataFrame({
             'E-mail priv.': df_nuevos['email'],
             'Teléfono celular': df_nuevos['numero'],
             'Nombre del lead': df_nuevos['first_name'],
             'Nombre completo': df_nuevos['full_name'],
-            'Etiqueta del lead': etiqueta,
+            'Etiqueta del lead': f"ADS, CargaGoogle",
             'Usuario responsable': "Rento arriendos",
-            'Etapa del lead': "CARGA MANUAL"
+            'Etapa del lead': "Carga manual"
         })
 
         # Guardar el archivo que te interesa
