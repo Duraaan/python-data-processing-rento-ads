@@ -7,12 +7,12 @@ from pathlib import Path
 CARPETA_LISTAS = Path(r"C:\Users\__Duraaan\Desktop\python\listas")
 ARCHIVO_SALIDA = "extraccion.xlsx"
 
-COL_FECHA = "Hora de envío: UTC"
-COL_TELEFONO = "PHONE_NUMBER"
-COL_EMAIL = "EMAIL"
-COL_FULL = "FULL_NAME"
-COL_FIRST = "FIRST_NAME"
-COL_LAST = "LAST_NAME"
+COL_FECHA = "Hora de envío: GMT-03:00"
+COL_TELEFONO = "Número de teléfono"
+COL_EMAIL = "Correo electrónico"
+COL_FULL = "Nombre completo"
+COL_FIRST = "Nombre"
+COL_LAST = "Apellidos"
 
 def limpiar_numero(texto):
     """Extrae solo dígitos y valida que no exceda los 11 caracteres."""
